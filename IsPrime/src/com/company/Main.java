@@ -1,23 +1,37 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
+    public static void displayPrime(int n) {
+
+        int num = 2;
+        while(num<n) {
+            int isPrime = 1;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = 0;
+                    break;
+                }
+            }
+                if (isPrime == 1) {
+
+                    System.out.println(num + "");
+                }
+                num++;
+            }
+
+
+    }
     public static void main(String[] args) {
         // write your code here
-        int isPrime = 1;
-        int n = 50;
-        for (int i = 2; i < n; i++) {
-            if (n % i == 0) {
-                isPrime = 0;
-                System.out.println(n + "is not prime" + i);
-                break;
-            }
-        }
-        if (isPrime == 1) {
-            System.out.println(n + "is prime");
-        } else {
-            System.out.println(n + "is not prime");
-        }
+        System.out.println("Please input an integer");
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
+        displayPrime(num);
+
+
     }
 }
 
