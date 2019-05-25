@@ -1,24 +1,26 @@
 package com.company;
 
-public class Grandparent {
-    // Private member variable
-    private int age;
+public class Grandparent extends Person  implements IProfession{
+
 
     // Constructor
-    public Grandparent (int age) {
-        this.age = age;
+    public Grandparent (String name, int age) {
+
+        super(name,age);
+        getProfession();
+        String condition = ifHealthy()?"good":"bad";
+        System.out.println("His health is " + condition);
     }
 
     @Override
-    public String toString() {
-        return "Grandparent[age=" + age + "]";
+    public boolean ifHealthy() {
+        return false;
     }
 
-    // All family members must have a method called getArea().
-    public double getArea() {
-        // We have a problem here!
-        // We need to return some value to compile the program.
-        System.err.println("Shape unknown! Cannot compute area!");
-        return 0;
+    @Override
+    public void getProfession() {
+        System.out.println("His profession is a teacher.");
     }
+
+
 }

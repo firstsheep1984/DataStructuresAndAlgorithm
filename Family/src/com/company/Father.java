@@ -3,26 +3,25 @@ package com.company;
 /*
  * The Rectangle class, subclass of Shape
  */
-public class Father extends Grandparent {
-    // Private member variables
-    private String gender;
-
+public class Father extends Grandparent implements IProfession{
+    // private String hobby;
 
     // Constructor
-    public Father(int age, String gender) {
-        super(age);
-        this.gender = gender;
+    public Father(String name,int age, String hobby) {
+        super(name,age);
+        //this.hobby = hobby;
+        System.out.println("His hobby is playing " + hobby);
+       // getProfession();
 
     }
 
     @Override
-    public String toString() {
-        return "Father[gender=" + gender + "," + super.toString() + "]";
+    public void getProfession(){
+        System.out.println("His profession is an engineer.");
+    }
+    @Override
+    public boolean ifHealthy() {
+        return true;
     }
 
-    // Override the inherited getArea() to provide the proper implementation
-    /*@Override
-    public double getArea() {
-        return length*width;
-    }*/
 }
