@@ -7,7 +7,7 @@ public class Main {
     public static void displayPrime(int n) {
 
         int num = 2;
-        while(num<n) {
+        while (num < n) {
             int isPrime = 1;
             for (int i = 2; i < num; i++) {
                 if (num % i == 0) {
@@ -15,15 +15,16 @@ public class Main {
                     break;
                 }
             }
-                if (isPrime == 1) {
+            if (isPrime == 1) {
 
-                    System.out.println(num + "");
-                }
-                num++;
+                System.out.println(num + "");
             }
+            num++;
+        }
 
 
     }
+
     public static void main(String[] args) {
         // write your code here
         System.out.println("Please input an integer");
