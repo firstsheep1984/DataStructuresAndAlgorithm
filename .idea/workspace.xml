@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="86e26931-5df5-4877-9909-4f8be58fa38b" name="Default Changelist" comment="" />
+=======
     <list default="true" id="152b33f4-35c8-43ab-b8a3-1a56a126296a" name="Default Changelist" comment="" />
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +27,30 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+=======
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+=======
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,17 +69,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="86e26931-5df5-4877-9909-4f8be58fa38b" name="Default Changelist" comment="" />
+      <created>1558805779948</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558805779948</updated>
+      <workItem from="1558805781714" duration="6000" />
+=======
       <changelist id="152b33f4-35c8-43ab-b8a3-1a56a126296a" name="Default Changelist" comment="" />
       <created>1558456969136</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558456969136</updated>
       <workItem from="1558456970342" duration="238000" />
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="6000" />
+=======
     <option name="totallyTimeSpent" value="238000" />
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
   </component>
   <component name="ToolWindowManager">
     <frame x="98" y="11" width="1400" height="920" extended-state="0" />
@@ -99,4 +130,44 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+=======
+>>>>>>> 07e6599c21a548c9d7acec05760c5ba9eacbaa2a
 </project>
