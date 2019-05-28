@@ -14,7 +14,7 @@ public class Main {
                 }
             }
             array[indexOfMin] = array[low];
-            array[low] = array[indexOfMin];
+            array[low] = min;
 
 
 
