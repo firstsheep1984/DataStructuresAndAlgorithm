@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class ArrayPlayground {
 
@@ -30,20 +31,37 @@ public class ArrayPlayground {
         }
         return -1;
     }
+
+    public void removeSpecificElements(){
+        Iterator<String> itr = nameList.iterator();
+        while(itr.hasNext()){
+            for (int i = 0; i < nameList.size(); i++) {
+                if(itr.next().contains("a")){
+                    itr.remove();
+                }
+            }
+
+
+        }
+        printName();
+    }
     public void printName(){
-        for(int i = 0; i < nameList.size();i++){
+       /*( for(int i = 0; i < nameList.size();i++){
             System.out.print(nameList.get(i) + " ");
         }
-
+*/
         for(String element : nameList){
             System.out.println(element);
         }
+        System.out.println(nameList);
     }
 //read and change .get().toLowerCase();
     // update: .set(index, "");
     public ArrayPlayground(){
         feedNameList();
         printName();
+        removeSpecificElements();
+
     }
     public static void main(String[] args) {
 	// write your code here
