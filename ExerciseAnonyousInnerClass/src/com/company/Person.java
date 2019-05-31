@@ -16,22 +16,22 @@ public class Person implements Comparable<Person> {
     }
 
     private String family;
+
     public String getFamily() {
         return family;
     }
 
 
-
-    Person(int id, String name, String family){
+    Person(int id, String name, String family) {
         this.id = id;
         this.name = name;
-        this. family = family;
+        this.family = family;
     }
 
 
     @Override
     public int compareTo(Person o) {
-        return this.getId()- o.getId();
+        return this.getId() - o.getId();
     }
 
     @Override
@@ -42,22 +42,23 @@ public class Person implements Comparable<Person> {
                 ", family='" + family + '\'' +
                 '}';
     }
-   /* public static <E extends Comparator<E>> E familyCompare(E o1, E o2) {
-        if (o1.compare(o2) > 0)
-            return o1;
-        else
-            return o2;
-    }*/
-   public static class nameCompare implements Comparator<Person>{
+
+    /* public static <E extends Comparator<E>> E familyCompare(E o1, E o2) {
+         if (o1.compare(o2) > 0)
+             return o1;
+         else
+             return o2;
+     }*/
+    public static class nameCompare implements Comparator<Person> {
 
 
-       @Override
-       public int compare(Person o1, Person o2) {
-           return o1.getName().compareTo(o2.getName());
-       }
-   }
+        @Override
+        public int compare(Person o1, Person o2) {
+            return o1.getName().compareTo(o2.getName());
+        }
+    }
 
-    public static  class familyCompare implements Comparator<Person>{
+    public static class familyCompare implements Comparator<Person> {
 
 
         @Override
@@ -65,12 +66,13 @@ public class Person implements Comparable<Person> {
             return o1.getFamily().compareTo(o2.getFamily());
         }
     }
-    public static class idCompare implements Comparator<Person>{
+
+    public static class idCompare implements Comparator<Person> {
 
 
         @Override
         public int compare(Person o1, Person o2) {
-            return o1.getId()-(o2.getId());
+            return o1.getId() - (o2.getId());
         }
     }
     /* public static <E extends Comparator<E>> E familyCompare(){
@@ -79,5 +81,7 @@ public class Person implements Comparable<Person> {
     public static int nameCompare(){
 
     }*/
+
+
 
 }
