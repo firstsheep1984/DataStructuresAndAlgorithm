@@ -1,6 +1,6 @@
 package com.company;
 
-public class Employee {
+public class Employee  {
     private String name;
     private String family;
     private int salary;
@@ -54,4 +54,16 @@ public class Employee {
                 ", isMarried=" + isMarried +
                 '}';
     }
+
+  /*  @Override
+    public int compareTo(Employee o) {
+        return  o.getSalary().compareTo(this.getSalary());
+    }
+*/
+  /*  @Override
+    public int compare(Employee o1, Employee o2) {
+        return 0;
+    }
+    */
+
 }

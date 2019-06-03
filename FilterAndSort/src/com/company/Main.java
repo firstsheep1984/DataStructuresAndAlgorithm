@@ -1,17 +1,13 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
-import static java.util.stream.Collectors.toList;
 
 public class Main {
 
     static List<Employee> employeeList = new ArrayList<Employee>();
 
-    static void  feedList(){
+    static void feedList() {
         Employee e1 = new Employee("Smith", "John", 22000, true);
         Employee e2 = new Employee("Lynn", "Joe", 25800, true);
         Employee e3 = new Employee("Lily", "Papi", 2600, true);
@@ -21,33 +17,44 @@ public class Main {
         Employee e7 = new Employee("Melisa", "Zhao", 255500, true);
         Employee e8 = new Employee("Yuan", "Wang", 25000, true);
 
-        employeeList = Arrays.asList(e1,e2,e3,e4,e5,e6,e7,e8);
+        employeeList = Arrays.asList(e1, e2, e3, e4, e5, e6, e7, e8);
 
     }
-    static void filter(){
 
+    static void filter() {
 
-    /*    Iterator<Employee> itr = employeeList.iterator();
-        while (itr.hasNext()){
-            if(itr.next().getSalary()<=3000){
-                itr.remove();
+       /* anonymous inner class
+       Collections.sort(employeeList, new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getSalary() - o2.getSalary();
+            }
+        });
+*/
+       // lambda expression
+          Collections.sort(employeeList, (Employee e1, Employee e2)-> {return e2.getSalary()-e1.getSalary();});
+
+        Iterator<Employee> itr = employeeList.iterator();
+        while (itr.hasNext()) {
+
+            Employee e = itr.next();
+            if (e.getSalary() > 3000 && e.getMarried()) {
+                System.out.println(e);
+                //  itr.remove();
             }
         }
-*/
-        employeeList = employeeList.stream().filter(e -> e.getSalary() > 3000).collect(toList());
+
     }
-    static void sort(){
-        employeeList = employeeList.stream()
-                .sorted((p1, p2) -> p2.getSalary()-(p1.getSalary())).collect(toList());
-    }
-    public Main(){
+
+    public Main() {
         feedList();
         filter();
-        sort();
-        System.out.println(employeeList);
+
+        // System.out.println(employeeList);
     }
+
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         new Main();
     }
 }
