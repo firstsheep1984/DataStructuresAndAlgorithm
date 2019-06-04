@@ -50,3 +50,11 @@ Web services use standardized industry standard protocol for the communication. 
 
 Low Cost Communication
 Web services use SOAP over HTTP protocol, so you can use your existing low-cost internet for implementing web services. This solution is much less costly compared to proprietary solutions like EDI/B2B. Besides SOAP over HTTP, web services can also be implemented on other reliable transport mechanisms like FTP.
+
+how internet works
+
+Multithreading
+Computer architecture
+DescriptionIn computer architecture, multithreading is the ability of a central processing unit to provide multiple threads of execution concurrently, supported by the operating system. This approach differs from multiprocessing. 
+
+difference with process
