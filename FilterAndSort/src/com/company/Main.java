@@ -23,7 +23,7 @@ public class Main {
 
     static void filter() {
 
-       /* anonymous inner class
+       /* 1. anonymous inner class
        Collections.sort(employeeList, new Comparator<Employee>() {
             @Override
             public int compare(Employee o1, Employee o2) {
@@ -31,18 +31,28 @@ public class Main {
             }
         });
 */
-       // lambda expression
-          Collections.sort(employeeList, (Employee e1, Employee e2)-> {return e2.getSalary()-e1.getSalary();});
+        // 2. lambda expression
+        Collections.sort(employeeList, (Employee e1, Employee e2) -> {
+            return e2.getSalary() - e1.getSalary();
+        });
 
+        // 3. Java 8
+        employeeList.stream().sorted((e1,e2) -> {
+            return e2.getSalary() - e1.getSalary();});
+
+        // 1. iterator
         Iterator<Employee> itr = employeeList.iterator();
         while (itr.hasNext()) {
 
             Employee e = itr.next();
             if (e.getSalary() > 3000 && e.getMarried()) {
                 System.out.println(e);
+                //  this will cause error
                 //  itr.remove();
             }
         }
+        // 2. Java 8
+        employeeList.stream().filter(e -> e.getSalary()>3000 && e.getMarried());
 
     }
 

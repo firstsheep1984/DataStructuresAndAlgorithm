@@ -5,8 +5,8 @@ import strategy.abstractModel.Person;
 
 public class Anglophone extends Person {
     public Anglophone(){
-      //  language = new English();
-        setLanguage(new English());
+        language = new English();
+      //  setLanguage(new English());
     }
 
 }

@@ -17,8 +17,9 @@ public class Main {
                 for (int i = 0; i < times; i++) {
                     System.out.print(string);
                 }
+                System.out.println("");
                 //  Thread.yield();
-                Thread.sleep(20);
+                Thread.sleep(4000);
             }
             catch (InterruptedException ex){
                 ex.printStackTrace();

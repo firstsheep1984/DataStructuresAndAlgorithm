@@ -2,7 +2,7 @@ package strategy.abstractModel;
 
 import strategy.LanguageInterface.ILanguage;
 
-public abstract class Person {
+public class Person {
     public ILanguage language;
 
     public Person(){
