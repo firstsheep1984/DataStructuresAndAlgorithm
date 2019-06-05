@@ -1,14 +1,21 @@
 what is difference between web server and web service?
 
-A web service is an application that is run by a web server and that results in a series of URLs that will return their data in a format that is intended to be parsed by a 'generic' computer program instead of by a browser. As a result web services can use any data format they want (as long as both sides agree), but typically something like XML (specifically SOAP or so) or JSON is used.
+A web service is an application that is run by a web server and that results in a series of URLs that will return their data in a format 
+that is intended to be parsed by a 'generic' computer program instead of by a browser. 
+As a result web services can use any data format they want (as long as both sides agree), but typically something like XML (specifically SOAP or so) or JSON is used.
 
 Web server
-DescriptionA web server is server software, or hardware dedicated to running said software, that can satisfy World Wide Web client requests. A web server can, in general, contain one or more websites. A web server processes incoming network requests over HTTP and several other related protocols.
+Description:  A web server is server software, or hardware dedicated to running said software, that can satisfy World Wide Web client requests. 
+A web server can, in general, contain one or more websites. A web server processes incoming network requests over HTTP and several other related protocols.
 
 advatages of web service
-A web service is a collection of open protocols and standards used for exchanging data between applications or systems. Software applications written in various programming languages and running on various platforms can use web services to exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. This interoperability (e.g., between Java and Python, or Windows and Linux applications) is due to the use of open standards.
+A web service is a collection of open protocols and standards used for exchanging data between applications or systems. 
+Software applications written in various programming languages and running on various platforms can use web services to 
+exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. 
+This interoperability (e.g., between Java and Python, or Windows and Linux applications) is due to the use of open standards.
 
-Two uses have been mentioned in many of the tutorials. One is the communication between different machines/applications, which sounds fine. But the next one is to develop reusable application components.
+Two uses have been mentioned in many of the tutorials. One is the communication between different machines/applications, 
+which sounds fine. But the next one is to develop reusable application components.
 
 Advantages
 
@@ -52,9 +59,13 @@ Low Cost Communication
 Web services use SOAP over HTTP protocol, so you can use your existing low-cost internet for implementing web services. This solution is much less costly compared to proprietary solutions like EDI/B2B. Besides SOAP over HTTP, web services can also be implemented on other reliable transport mechanisms like FTP.
 
 how internet works
+The information used to get packets to their destinations are contained in routing tables kept by each router connected to the Internet. Routers are packet switches. A router is usually connected between networks to route packets between them. Each router knows about it's sub-networks and which IP addresses they use.
 
 Multithreading
 Computer architecture
-DescriptionIn computer architecture, multithreading is the ability of a central processing unit to provide multiple threads of execution concurrently, supported by the operating system. This approach differs from multiprocessing. 
+DescriptionIn computer architecture, multithreading is the ability of a central processing unit to provide multiple threads of execution concurrently, 
+supported by the operating system. This approach differs from multiprocessing. 
 
 difference with process
+Threads are used for small tasks, whereas processes are used for more 'heavyweight' tasks – basically the execution of applications. 
+Another difference between a thread and a process is that threads within the same process share the same address space, whereas different processes do not.
